@@ -1,0 +1,311 @@
+/*** CSS Start ***/
+#omnifooter {
+	margin:0;	/*** THROW AWAY CSS... GRUNT PROCESS IS KILLING THE FIRST LINE OF CSS DUE TO A ';' SEPARATOR BEING INJECTED ***/
+}
+
+/*** Icon Font ***/
+@font-face{ font-family:'vzwIcons';src:url('/globalnav/fonts/vzw-iconfont.eot');src:url('/globalnav/fonts/vzw-iconfont.eot?#iefix') format('embedded-opentype'),url('/globalnav/fonts/vzw-iconfont.woff') format('woff'),url('/globalnav/fonts/vzw-iconfont.ttf') format('truetype'),url('/globalnav/fonts/vzw-iconfont.svg#vzwIcons') format('svg');font-weight:normal;font-style:normal}
+/*** Old font - being deprecated ***/
+@font-face { font-family:"verizon_apexbook"; src:url("fonts/verizonapex-book-webfont.woff") format("woff"), url("fonts/verizonapex-book-webfont.ttf") format("truetype"), url("fonts/verizonapex-book-webfont.svg") format("svg"), url("fonts/verizonapex-book-webfont.eot") format("embedded-opentype"), url("fonts/verizonapex-book-webfont.eot?#iefix") format("embedded-opentype")}
+@font-face { font-family:"verizon_apexbold"; src:url("fonts/verizonapex-bold-webfont.woff") format("woff"), url("fonts/verizonapex-bold-webfont.ttf") format("truetype"), url("fonts/verizonapex-bold-webfont.svg") format("svg"), url("fonts/verizonapex-bold-webfont.eot") format("embedded-opentype"), url("fonts/verizonapex-bold-webfont.eot?#iefix") format("embedded-opentype")}
+@font-face { font-family:"verizon_apexbold_italic"; src:url("fonts/verizonapex-bolditalic-webfont.woff") format("woff"), url("fonts/verizonapex-bolditalic-webfont.ttf") format("truetype"), url("fonts/verizonapex-bolditalic-webfont.svg") format("svg"), url("fonts/verizonapex-bolditalic-webfont.eot") format("embedded-opentype"), url("fonts/verizonapex-bolditalic-webfont.eot?#iefix") format("embedded-opentype")}
+@font-face { font-family:"verizon_apexmedium"; src:url("fonts/verizonapex-medium-webfont.woff") format("woff"), url("fonts/verizonapex-medium-webfont.ttf") format("truetype"), url("fonts/verizonapex-medium-webfont.svg") format("svg"), url("fonts/verizonapex-medium-webfont.eot") format("embedded-opentype"), url("fonts/verizonapex-medium-webfont.eot?#iefix") format("embedded-opentype")}
+@font-face { font-family:"verizon_apexlight"; src:url("fonts/verizonapex-light-webfont.woff") format("woff"), url("fonts/verizonapex-light-webfont.ttf") format("truetype"), url("fonts/verizonapex-light-webfont.svg") format("svg"), url("fonts/verizonapex-light-webfont.eot") format("embedded-opentype"), url("fonts/verizonapex-light-webfont.eot?#iefix") format("embedded-opentype") }
+@font-face { font-family:"verizon_apexbook_italic"; src:url("fonts/verizonapex-bookitalic-webfont.woff") format("woff"), url("fonts/verizonapex-bookitalic-webfont.ttf") format("truetype"), url("fonts/verizonapex-bookitalic-webfont.svg") format("svg"), url("fonts/verizonapex-bookitalic-webfont.eot") format("embedded-opentype"), url("fonts/verizonapex-bookitalic-webfont.eot?#iefix") format("embedded-opentype")}
+@font-face { font-family:"verizon_angelinaregular"; src:url("fonts/angelina-webfont.woff") format("woff"), url("fonts/angelina-webfont.ttf") format("truetype"), url("fonts/angelina-webfont.svg") format("svg"), url("fonts/angelina-webfont.eot") format("embedded-opentype"), url("fonts/angelina-webfont.eot?#iefix") format("embedded-opentype")}
+/*** New font ***/
+@font-face{font-family:"NeueHaasGroteskDisplay";src:url("/globalnav/fonts/NeueHaasGroteskDisplay.eot?#iefix");src:url("/globalnav/fonts/NeueHaasGroteskDisplay.eot?#iefix") format("eot"),url("/globalnav/fonts/NeueHaasGroteskDisplay.woff2") format("woff2"),url("/globalnav/fonts/NeueHaasGroteskDisplay.woff") format("woff"),url("/globalnav/fonts/NeueHaasGroteskDisplay.ttf") format("truetype"),url("/globalnav/fonts/NeueHaasGroteskDisplay.svg#NeueHaasGroteskDisplayBold") format("svg");}
+@font-face{font-family:"NeueHaasGroteskDisplayBold";src:url("/globalnav/fonts/NeueHaasGroteskDisplayBold.eot?#iefix");src:url("/globalnav/fonts/NeueHaasGroteskDisplayBold.eot?#iefix") format("eot"),url("/globalnav/fonts/NeueHaasGroteskDisplayBold.woff2") format("woff2"),url("/globalnav/fonts/NeueHaasGroteskDisplayBold.woff") format("woff"),url("/globalnav/fonts/NeueHaasGroteskDisplayBold.ttf") format("truetype"),url("/globalnav/fonts/NeueHaasGroteskDisplayBold.svg#NeueHaasGroteskDisplayBold") format("svg");}
+@font-face{font-family:"NeueHaasGroteskDisplayMedium";src:url("/globalnav/fonts/NeueHaasGroteskDisplayMedium.eot?#iefix");src:url("/globalnav/fonts/NeueHaasGroteskDisplayMedium.eot?#iefix") format("eot"),url("/globalnav/fonts/NeueHaasGroteskDisplayMedium.woff2") format("woff2"),url("/globalnav/fonts/NeueHaasGroteskDisplayMedium.woff") format("woff"),url("/globalnav/fonts/NeueHaasGroteskDisplayMedium.ttf") format("truetype"),url("/globalnav/fonts/NeueHaasGroteskDisplayMedium.svg#NeueHaasGroteskDisplayMedium") format("svg");}
+@font-face{font-family:"NeueHaasGroteskText";src:url("/globalnav/fonts/NeueHaasGroteskText.eot?#iefix");src:url("/globalnav/fonts/NeueHaasGroteskText.eot?#iefix") format("eot"),url("/globalnav/fonts/NeueHaasGroteskText.woff2") format("woff2"),url("/globalnav/fonts/NeueHaasGroteskText.woff") format("woff"),url("/globalnav/fonts/NeueHaasGroteskText.ttf") format("truetype"),url("/globalnav/fonts/NeueHaasGroteskText.svg#NeueHaasGroteskText") format("svg");}
+@font-face{font-family:"NeueHaasGroteskTextBold";src:url("/globalnav/fonts/NeueHaasGroteskTextBold.eot?#iefix");src:url("/globalnav/fonts/NeueHaasGroteskTextBold.eot?#iefix") format("eot"),url("/globalnav/fonts/NeueHaasGroteskTextBold.woff2") format("woff2"),url("/globalnav/fonts/NeueHaasGroteskTextBold.woff") format("woff"),url("/globalnav/fonts/NeueHaasGroteskTextBold.ttf") format("truetype"),url("/globalnav/fonts/NeueHaasGroteskTextBold.svg#NeueHaasGroteskTextBold") format("svg");}
+@font-face{font-family:"NeueHaasGroteskTextMedium";src:url("/globalnav/fonts/NeueHaasGroteskTextMedium.eot?#iefix");src:url("/globalnav/fonts/NeueHaasGroteskTextMedium.eot?#iefix") format("eot"),url("/globalnav/fonts/NeueHaasGroteskTextMedium.woff2") format("woff2"),url("/globalnav/fonts/NeueHaasGroteskTextMedium.woff") format("woff"),url("/globalnav/fonts/NeueHaasGroteskTextMedium.ttf") format("truetype"),url("/globalnav/fonts/NeueHaasGroteskTextMedium.svg#NeueHaasGroteskTextMedium") format("svg");}
+
+#omnifooter {
+	background:#ffffff;
+	border:0;
+	color:#6d6e71;
+	display:block;
+	font-size:10px;
+	font-family:NeueHaasGroteskText, Arial, Helvetica, sans-serif;
+	line-height:14px;
+	margin:0;
+	padding:32px 6.25% 0;
+}
+#omnifooter * {
+    margin:0;
+    padding:0;
+    border:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+#omnifooter .clearfix:before, #omnifooter .clearfix:after {
+    display:table;
+    content:"";
+    line-height:0
+}
+#omnifooter .clearfix:after {
+    clear:both
+}
+#omnifooter a {
+    text-decoration:none;
+    color:inherit
+}
+#omnifooter a:focus {
+    outline:thin dotted #333;
+    outline:5px auto -webkit-focus-ring-color;
+    outline-offset:-2px
+}
+#omnifooter a:hover, #omnifooter a:active {
+    outline:0
+}
+#omnifooter .pull-left {
+    float:left
+}
+#omnifooter .social-share-module {
+    border:none;
+}
+#omnifooter .social-share-module:before, #omnifooter .social-share-module:after {
+    display:table;
+    content:"";
+    line-height:0
+}
+#omnifooter .social-share-module:after {
+    clear:both
+}
+#omnifooter .social-share-module ul.social-list {
+	width:100%
+}
+#omnifooter .social-share-module ul.social-list li {
+    border:none;
+    list-style:none;
+    padding:0 0 0 2%;
+    float:left;
+    width:auto;
+}
+#omnifooter .social-share-module ul.social-list li:first-child {
+	padding:0;
+}
+#omnifooter .social-share-module ul.social-list li a {
+	background:#949494;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+    display:block;
+    height:37px;
+    line-height:37px;
+    overflow:hidden;
+    text-align:center;
+    width:37px;
+}
+#omnifooter .social-share-module ul.social-list li a:hover, #omnifooter .social-share-module ul.social-list li a:focus {
+	background-color:#676767;
+}
+#omnifooter .social-share-module ul.social-list li a:active {
+	background-color:#000;
+}
+#omnifooter .social-share-module ul.social-list li a .social-icon, #omnifooter #footerVzwOptIn .vzw-button-red span {
+    color:#fff;
+    display:inline-block;
+	font-family:'vzwIcons';
+	font-style:normal;
+    font-weight:normal;
+    font-variant:normal;
+    font-size:15px;
+    text-transform:none;
+    line-height:40px;
+    speak:none;
+    vertical-align:top;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#omnifooter .social-share-module ul.social-list li a .social-icon.forums:before {
+    content: "\e60c";
+}
+#omnifooter .social-share-module ul.social-list li a .social-icon.email:before {
+    content: "\e04f";
+}
+#omnifooter .social-share-module ul.social-list li a .social-icon.facebook:before {
+    content: "\e08d";
+}
+#omnifooter .social-share-module ul.social-list li a .social-icon.twitter:before {
+    content: "\e08f"
+}
+#omnifooter .social-share-module ul.social-list li a .social-icon.google-plus:before {
+    content: "\e08b"
+}
+#omnifooter .social-share-module ul.social-list li a .social-icon.pinterest:before {
+    content: "\e60b"
+}
+#omnifooter .social-share-module ul.social-list li a .social-icon.email, 
+#omnifooter .social-share-module ul.social-list li a .social-icon.forums, 
+#omnifooter .social-share-module ul.social-list li a .social-icon.facebook, 
+#omnifooter .social-share-module ul.social-list li a .social-icon.twitter, 
+#omnifooter .social-share-module ul.social-list li a .social-icon.google-plus, 
+#omnifooter .social-share-module ul.social-list li a .social-icon.pinterest{
+    background: none;
+}
+#omnifooter .social-share-module ul.social-list li.last {
+    padding-right:0;
+    border-right:none
+}
+#omnifooter .footer-menu-block {
+    padding-top:44px
+}
+#omnifooter .footer-menu-wrapper {
+    width:50%
+}
+#omnifooter .footer-menu-wrapper.other-site {
+    width:40%;
+    padding-left:20px;
+    border-left:1px solid #d2d3d4
+}
+#omnifooter .footer-menu li {
+    list-style:none;
+    padding-bottom:13px
+}
+#omnifooter .footer-menu li a {
+    color:#949494;
+	font-family:NeueHaasGroteskDisplayMedium, Arial, Helvetica, sans-serif;
+	font-size:12px;
+    text-transform:none;
+}
+#omnifooter .footer-menu li a:hover, #omnifooter .footer-menu li a:focus, #omnifooter .footer-menu li a:active {
+	color:#000;
+}
+#omnifooter .copy-right {
+    padding:0 0 18px;
+    clear:both;
+}
+#omnifooter .copy-right li {
+    float:left;
+    padding:0 5px;
+    list-style:none;
+    line-height:12px;
+    border-left:1px solid #d2d3d4
+}
+#omnifooter .copy-right li:first-child {
+    padding-left:0;
+    border:0
+}
+
+#omnifooter .footer-menu-wrapper-hoz {clear:left; padding-top:31px; margin:0 auto; padding-bottom: 44px;}      	
+#omnifooter .footer-menu-wrapper-hoz li:first-child { border: 0 none; }
+#omnifooter .footer-menu-wrapper-hoz li {border-left: 1px solid #D2D3D4; float: left;  line-height: 1.2rem;  list-style: none outside none; padding: 0 5px; margin: 0 0 6px;}
+
+#omnifooter #footerVzwOptIn {
+	width:100%;
+    margin:0 0 35px;
+}
+#omnifooter #footerVzwOptIn label{
+	color:#000;
+	font-family:NeueHaasGroteskDisplayMedium, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:17px;
+    margin:0 0 30px;
+    text-align:left;
+    padding:0;
+}
+#omnifooter #footerVzwOptIn .textbox-holder {
+	height:40px;
+	position:relative;
+	width:100%;
+}
+#omnifooter #footerVzwOptIn .textbox { 
+    background-color:#f7f7f7;
+    border:none;
+    border:none;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+    box-shadow:none;
+	box-sizing:border-box;
+    color:#000;
+    font-family:NeueHaasGroteskTextMedium,arial,helvetica,sans-serif;
+    font-size:14px;
+    height:48px;
+    line-height:18px;
+    padding:15px 45px 15px 10px;
+    margin:0;
+    width:100%;
+    -webkit-transition:none;
+	-moz-transition:none;
+	-o-transition:none;
+	transition:none;
+}
+
+label[for="footerVzwOptInEmail"].error {
+  margin-top: 0px !important;
+  margin-bottom: 15px !important;
+} 
+
+#omnifooter #footerVzwOptIn .textbox:active, #omnifooter #footerVzwOptIn .textbox:focus{
+	border-color:#000;
+}
+#omnifooter #footerVzwOptIn .vzw-button-red {
+    background:#cd040b;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    border:none;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+    color:#FFF;
+	display:block;
+	height:48px;
+    line-height:48px;
+    position:absolute;
+    right:0;
+    text-align:center;
+    top:0;
+    width:48px;
+}
+#omnifooter #footerVzwOptIn .vzw-button-red:hover, #omnifooter #footerVzwOptIn .vzw-button-red:focus {
+	background-color:#a80309;
+}
+#omnifooter #footerVzwOptIn .vzw-button-red:active {
+	background-color:#740206;
+}
+#omnifooter #footerVzwOptIn .vzw-button-red span {
+	font-size:10px;
+	line-height:48px;
+}
+
+#omnifooter #footerVzwOptIn .footerVerbiage  a{
+width: auto;
+float: none;
+display:inline;
+text-decoration: underline; 
+color: #0000ff;
+}
+
+#omnifooter #footerVzwOptIn .footerVerbiage {
+	color:#949494;
+	font-family:NeueHaasGroteskDisplay,arial,helvetica,sans-serif;
+	font-size:10px;
+	line-height:13px;
+	padding:24px 0 0;
+}
+
+
+#omnifooter #footerVzwOptIn .textbox::-webkit-input-placeholder { /* WebKit browsers */
+	color:#949494;
+    font-family:NeueHaasGroteskText,arial,helvetica,sans-serif;
+}
+#omnifooter #footerVzwOptIn .textbox:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color:#949494;
+    font-family:NeueHaasGroteskText,arial,helvetica,sans-serif;
+	opacity:1;
+}
+#omnifooter #footerVzwOptIn .textbox::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:#949494;
+    font-family:NeueHaasGroteskText,arial,helvetica,sans-serif;
+	opacity:1;
+}
+#omnifooter #footerVzwOptIn .textbox:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color:#949494;
+    font-family:NeueHaasGroteskText,arial,helvetica,sans-serif;
+}
